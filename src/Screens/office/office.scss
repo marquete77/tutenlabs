@@ -1,0 +1,134 @@
+@import "./src/assets/styles/variables.scss";
+@import "./src/assets/styles/mixins.scss";
+
+@import "./dashboard/dashboard.scss";
+@import "./operation/servicesDefinition/servicesDefinition";
+
+.office__main {
+
+  .layout__sidebar {
+    width: $width-sidebar;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+  }
+
+  .office__container {
+    margin-left: $width-sidebar;
+    width: calc(100% - 260px);
+    height: 100vh;
+    background: $background;
+
+    .layout__topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      height: $height-topbar;
+      @include box-shadow-toolbar;
+      padding: 0 1.5rem;
+      background: $sidebar-color-hover;
+    }
+
+    .layout__breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      height: $height-breadcrumb;
+      border-bottom: 1px solid $border;
+      padding: 0 1.5rem;
+    }
+
+    .layout__content {
+      padding: 1.5rem;
+
+      .view-main {
+        .header-view {
+          padding: 1rem;
+          height: auto;
+          width: 100%;
+          background-color: $white;
+          @include card;
+          display: grid;
+          grid-template-rows: repeat(2, 1fr);
+          grid-gap: .7rem;
+
+          > div {
+            height: 40px;
+          }
+
+          .top-section__header-view {
+            justify-content: flex-end;
+            display: grid;
+            grid-template-columns: repeat(6, 155px);
+            grid-gap: .7rem;
+
+            .btn-success__header-view {
+              grid-row: 1 / 2;
+              grid-column: 6 / 7;
+            }
+
+            .btn-cancel-back__header-view {
+              grid-column: 5 / 6;
+              grid-row: 1 / 2;
+            }
+          }
+
+          .bottom-section__header-view {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 155px);
+            grid-gap: 2.5rem;
+          }
+        }
+
+        .content-view {
+          margin-top: 15px;
+          height: 64vh;
+          background-color: $white;
+          //max-height: 530px;
+          @include card;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+
+          .not-found-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .icon {
+              font-size: 58px;
+              color: $warning-color
+            }
+
+            span {
+              color: $secondary-color;
+              font-size: 18px;
+            }
+          }
+
+          .form-definition {
+            width: 100%;
+            padding: 1.5rem;
+            .content {
+              overflow: auto;
+              height: 500px;
+              padding: 3rem 1rem;
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 2rem;
+
+              .p-inputgroup-textArea {
+                grid-column: 1 / 3;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+

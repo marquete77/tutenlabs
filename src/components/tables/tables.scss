@@ -1,0 +1,9 @@
+@import "./../../assets/styles/variables";
+@import "./../../assets/styles/mixins";
+
+.table-content {
+  @include card;
+  padding: .7rem;
+  background-color: $white;
+  height: 64vh;
+}

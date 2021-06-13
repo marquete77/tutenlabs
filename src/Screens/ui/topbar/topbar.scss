@@ -1,0 +1,87 @@
+@import "./../../../assets/styles/variables";
+@import "./../../../assets/styles/mixins";
+
+.layout__topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+
+  .left__topbar {
+    span {
+      font-size: 28px;
+    }
+  }
+
+  .right__topbar {
+    padding: 0 1.5rem;
+    font-size: 18px;
+    height: 40px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .dropdown_logout_container {
+      .button_dropdown {
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        @include transition_icon;
+
+        > div {
+
+        }
+
+        &:hover {
+          @include transition_icon;
+          color: $secondary-color;
+        }
+      }
+
+      //.card_logout_container {
+      //  display: none;
+        .card_logout {
+          z-index: 10000;
+          transition: all .2s ease-in-out;
+          height: 115px;
+          background: $white;
+          border-radius: $border-radius-card;
+          min-width: 150px;
+          max-width: 200px;
+          position: fixed;
+          right: 50px;
+          top: 55px;
+          color: $black-secondary;
+          padding: 1.5rem;
+
+          .card_logout_header {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            span {
+              font-size: 14px;
+            }
+          }
+
+          .button_logout_container {
+            margin-top: 10px;
+            cursor: pointer;
+
+            span {
+              margin-left: 10px;
+            }
+
+            &:hover {
+              color: $primary-color-hover
+            }
+          }
+        }
+      //}
+
+    }
+
+  }
+}
+

@@ -1,0 +1,75 @@
+@import "./src/assets/styles/mixins";
+@import "./src/assets/styles/variables";
+
+* {
+  margin: 0px;
+}
+
+body, html {
+  height: 100vh;
+  width: 100vw;
+  line-height: 1.5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+.p-inputgroup {
+  width: 100%;
+}
+
+.p-dropdown, .p-inputnumber {
+  width: 100%;
+  height: 42px;
+}
+
+.name-column {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.loading-spinner{
+  position: fixed;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  top: 75px
+}
+.display-block {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  transition: visibility 0s, opacity 0.2s linear;
+}
+
+.display-none {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+}
+
+// UI
+@import './src/Screens/ui/sidebar/sidebar';
+@import './src/Screens/ui/topbar/topbar';
+
+// Components
+@import "./src/components/components";
+
+// ==== Screens ====
+// Auth
+@import './src/Screens/auth/auth';
+
+
+// Office
+@import './src/Screens/office/office';
+
+
+
+

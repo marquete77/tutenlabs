@@ -1,0 +1,109 @@
+@import "./../../../assets/styles/variables";
+@import "./../../../assets/styles/mixins";
+
+
+.layout__sidebar {
+  color: $white !important;
+  font-size: 14px;
+  font-family: $font-family;
+
+  .sidebar__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: $height-topbar;
+    background: $sidebar-color-hover;
+    @include box-shadow-toolbar;
+    padding: 1rem 1.5rem;
+  }
+
+  .layout__menu_sidebar {
+    height: 100%;
+    background: $sidebar-color;
+    padding: 1.5rem 0;
+
+    .section-menu {
+      width: 100%;
+
+      .title-section {
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        height: 42px;
+        align-items: center;
+        font-weight: 400;
+        @include transition(.2s);
+        &:hover {
+          @include transition(.2s);
+          background-color: $sidebar-color-hover;
+        }
+
+        .title {
+          padding-left: .8rem;
+          grid-column: 1 / 9;
+        }
+
+        .icon-item-menu {
+          grid-column: 9 / 11;
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+
+      .items {
+        .item-menu {
+          width: 100%;
+          height: 42px;
+          font-weight: 200;
+          line-height: 1.5;
+          .title-section {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            align-items: center;
+
+            .title {
+              grid-column: 1 / 9;
+            }
+
+            .icon-item-menu {
+              grid-column: 9 / 11;
+              text-align: center;
+            }
+          }
+
+          &:hover {
+            color: $white;
+            .item-menu {
+              .title-section {
+                .title {
+                  color: $white;
+                }
+                .icon-item-menu {
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+  .active {
+    color: $sidebar-color-hover;
+  }
+
+
+}
+
+.selected-section {
+  background-color: $sidebar-color-hover;
+}
+
+.selected-item {
+  background-color: $sidebar-color-active;
+}

@@ -1,0 +1,103 @@
+//============= Size Screen Definitions =============
+$phone: 400px;
+$phone-wide:   480px;
+$phable:      560px;
+$table-small: 640px;
+$table:       768px;
+$table-wide:  1024px;
+$desktop:      1248px;
+$desktop-wide: 1440px;
+
+//============= App Size Definitions =============
+$height-topbar: 68px;
+$height-breadcrumb: 42px;
+$width-sidebar: 260px;
+
+//============= App Styles Definitions =============
+$border-radius-button: 3px;
+$border-radius-input: 3px;
+$border-radius-card: 4px;
+$font-color-sidebar: #3A3E40;
+
+//============= App Colors Definitions =============
+$white: #FFFFFF;
+$black-primary: #1D2125;
+$black-secondary: #333A41;
+$light-gray: gray;
+
+$background: #e9ecef;
+
+$border: #b7b9c4;
+
+$font-family: Roboto, Helvetica, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+
+// Primary Colors
+$primary-color: #7f207e;
+$primary-color-hover: #5b0d5a;
+$primary-color-disabled: #e9b9e8;
+$primary-color-disabled-font: #a068a0;
+$primary-color-active: #70116f;
+$primary-color-boxShadow: #e5cce5;
+$primary-color-background: #c6bdc6;
+
+// Secondary Colors
+$secondary-color: #6B7175;
+$secondary-color-hover: #53585B;
+$secondary-color-disabled: #EFF0F0;
+$secondary-color-disabled-font: #BABDC0;
+$secondary-color-active: #53585b;
+$secondary-color-boxShadow: #dfe6e9;
+
+// Tertiary Colors
+$tertiary-color: #FCB616;
+$tertiary-color-hover: #de9b03;
+$tertiary-color-disabled: #FFF9EB;
+$tertiary-color-disabled-font: #FDD67C;
+$tertiary-color-active: #f1c564;
+
+// Sidebar Colors
+$sidebar-color: #304B69;
+$sidebar-color-hover: #22384e;
+$sidebar-color-active: #406c99;
+$sidebar-color-font: #8bd684;
+
+// Event Colors
+$link-color: #0C73FF;
+$link-color-hover: #005BD6;
+$link-color-disabled: #70ADFF;
+
+$info-color: #8294ED;
+$info-color-hover: #566ee6;
+$info-color-disabled: #DBE1FA;
+$info-color-disabled-font: #AFBBF3;
+$info-color-active: #5d75ef;
+
+$success-color: #00AF3B;
+$success-color-hover: #007A29;
+$success-color-disabled: #E0FFEB;
+$success-color-disabled-font: #7AFFA7;
+$success-color-active: #019131;
+
+$danger-color: #ED0034;
+$danger-color-hover: #b80028;
+$danger-color-disabled: #FFEBEF;
+$danger-color-disabled-font: #FFB8C7;
+$danger-color-active: #d2012f;
+
+$warning-color: #faf600;
+$warning-color-font-color: #25201D;
+$warning-color-hover: #c7c400;
+$warning-color-disabled: #FFFEC7;
+$warning-color-disabled-font: #C7C400;
+$warning-color-active: #ddd904;
+
+$dark-color: #333A41;
+$dark-color-hover: #1D2125;
+$dark-color-disabled: #CED4D9;
+$dark-color-disabled-font: #F9FAFB;
+
+$light-color: #EBF0F3;
+$light-color-font-color: #333A41;
+$light-color-hover: #CCD9E0;
+$light-color-disabled: #F9FAFB;
+$light-color-disabled-font: #B2BBC3;
